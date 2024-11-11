@@ -39,12 +39,12 @@
     <input id="remember-me" name="remember-me" type="checkbox"/>
     <label for="remember-me">Remember me</label>
   </div>
-  <button type="submit" class="signup-btn"></a>Log in</button><a href ="/user">
+  <button type="submit" class="signup-btn"></a>Log in</button><a href ="/daftar">
 </form>
     <div class="divider"></div>
     <div class="login-link">
       <p>Don't have an account?</p>
-      <a href="daftar">Sign up</a>
+      <a href="/daftar">Sign up</a>
     </div>
   </div>
   <script>

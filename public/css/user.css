@@ -154,6 +154,117 @@ color: #009C96; /* Warna saat hover */
   color: #333;
 }
 
+/* Overlay styling */
+.overlay {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7); /* Overlay dengan warna hitam transparan */
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(5px); /* Efek blur pada background */
+animation: fadeIn 0.3s ease; /* Efek fade-in */
+}
+
+/* Popup styling with gradient and shadow */
+.popup {
+background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Background gradien lembut */
+padding: 25px;
+width: 320px;
+border-radius: 12px;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+transform: scale(0.9);
+transition: transform 0.3s ease; /* Efek transisi scale halus */
+}
+
+.popup.show {
+transform: scale(1); /* Efek scale-up saat ditampilkan */
+}
+
+/* Popup heading and close button styling */
+.popup h2 {
+margin-top: 0;
+font-size: 20px;
+color: #333;
+}
+
+.popup .close-btn {
+float: right;
+cursor: pointer;
+font-size: 18px;
+color: #555;
+font-weight: bold;
+}
+
+/* Filter options styling */
+.popup .filter-option {
+margin: 20px 0;
+}
+
+.popup .filter-option h3 {
+font-size: 16px;
+color: #009C96;
+margin-bottom: 10px;
+}
+
+.popup .filter-option input[type="radio"] {
+margin-right: 10px;
+}
+
+.popup .filter-option label {
+cursor: pointer;
+font-size: 14px;
+color: #333;
+}
+
+/* Apply button styling */
+.apply-btn {
+width: 100%;
+padding: 12px;
+border: none;
+background-color: #009C96;
+color: white;
+font-size: 16px;
+cursor: pointer;
+border-radius: 8px;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+background-color: #009C96; /* Efek hover pada tombol */
+}
+
+/* Button to open filter */
+.search-bar button {
+margin-top: 10px;
+padding: 10px 15px;
+font-size: 16px;
+border-radius: 8px;
+background-color: #009C96;
+color: white;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+background-color: #009C96;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
 .recommendations {
   padding: 20px 40px;
   background-color: #f8f8f8;

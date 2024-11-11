@@ -60,7 +60,7 @@
           dan Nikmati Hidup Kampus yang Lebih Baik!
         </h1>
       </div>
-      <div id="search-bar" class="search-bar">
+       <div id="search-bar" class="search-bar">
     <form action="{{ route('search') }}" method="POST">
         @csrf
         <i class="fas fa-map-marker-alt"></i>
@@ -429,6 +429,21 @@
     }
 </script>
 <script>
+    // Initialize Flatpickr for both check-in and check-out date inputs
+    flatpickr("#checkin-date", {
+        dateFormat: "d M Y",  
+        onChange: function(selectedDates, dateStr, instance) {
+            console.log("Tanggal Masuk: " + dateStr);
+        }
+    });
+
+    flatpickr("#checkout-date", {
+        dateFormat: "d M Y",  // Format tanggal yang diinginkan (misal: 2024-10-07)
+        onChange: function(selectedDates, dateStr, instance) {
+            console.log("Tanggal Keluar: " + dateStr);
+        }
+    });
+
   let currentIndex = 0; // Indeks gambar saat ini
   const cards = document.querySelectorAll('.carousel .card'); // Ambil semua kartu
   const totalCards = cards.length; // Total jumlah kartu

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.latest-properties {
+    margin-bottom: 10px;
+  }
+  
+  .latest-properties h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .property {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 23%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .property img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+  }
+  
+  .availability {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .property-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .property-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  
+  .property-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .property-content .price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin: 10px 0;
+  }
+  
+  .property-content .voucher {
+    font-size: 14px;
+    color: #28a745;
+    display: flex;
+    align-items: center;
+  }
+  
+  .property-content .voucher i {
+    margin-right: 5px;
+  }

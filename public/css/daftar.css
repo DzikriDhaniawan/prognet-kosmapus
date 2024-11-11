@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  height: 40px;
+}
+
+.back-arrow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.back-arrow i {
+  margin-right: 5px;
+  color: #009C96; /* Ubah warna ikon panah sesuai kebutuhan */
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.container .password-container {
+  position: relative;
+}
+
+.container .password-container input {
+  padding-right: 40px;
+}
+
+.container .password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  transform: translateY(-25%);
+  cursor: pointer;
+  color: #888;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.container .terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container .terms input {
+  margin-right: 10px;
+}
+
+.container .terms a {
+  color: #009C96;
+  text-decoration: none;
+}
+
+.container .signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #009C96;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.container .or {
+  text-align: center;
+  margin: 20px 0;
+  color: #888;
+  position: relative;
+}
+
+.container .or::before,
+.container .or::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.container .or::before {
+  left: 0;
+}
+
+.container .or::after {
+  right: 0;
+}
+
+.container .google-btn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.container .google-btn img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.container .login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .login-link a {
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: bold;
+}

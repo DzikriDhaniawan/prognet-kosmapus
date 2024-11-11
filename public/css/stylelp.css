@@ -1,0 +1,452 @@
+/* Reset browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.); /* Transparan */
+    /*backdrop-filter: blur(55px);*/
+    transition: background-color 0.3s ease;
+}
+
+.nav-links, .auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-links a, .auth-buttons a {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255); /* Teks putih */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .auth-buttons a:hover {
+    color: #f0f0f0;
+}
+
+.auth-buttons a {
+    margin-left: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+}
+
+/* Slider styling */
+/* Slider styling */
+.slider {
+    position: relative; /* Ubah dari absolute */
+    width: 100%;
+    height: 90%; /* Ubah ukuran tinggi */
+    border-radius: 0px 0px 00px 130px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0; /* Setel ke kiri untuk semua gambar */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius:px; /* Menambahkan border-radius */
+    opacity: 0; /* Mulai dengan transparansi */
+    transition: opacity 0.5s ease; /* Tambahkan efek transisi opacity */
+}
+
+.slide.active {
+    opacity: 1; /* Tampilkan gambar yang aktif */
+}
+
+/* Content styling (above the slider) */
+.content {
+    position: absolute; /* Ubah dari relative ke absolute */
+    top: 65%; /* Agar konten berada di tengah slider */
+    left: 35%;
+    transform: translate(-50%, -50%); /* Pusatkan konten */
+    z-index: 2;
+    text-align: left;
+    color: white;
+    width: 60%;
+    padding: 30px;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */ 
+    border-radius: 15px; /* Menambahkan border-radius pada konten */
+}
+
+
+
+.content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    margin-left: 15px;
+}
+
+.content h2 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    margin-left: 15px;
+}
+
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 55px;
+}
+
+.search-bar input, .search-bar select, .search-bar button {
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+.search-bar input[type="text"], .search-bar input[type="date"] {
+    flex: 1;
+    max-width: 250px;
+}
+
+.search-bar select {
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-left: 45px;
+}
+
+.search-bar button:hover {
+    background-color: #006d6d;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar input, .search-bar select, .search-bar button {
+        width: 100%;
+    }
+}
+
+.rekomendasi-kos {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative; /* Posisi relative untuk container ini */
+}
+
+.rekomendasi-kos h2{
+    text-align: left;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    font-size: 1.8 em;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+}
+
+.kos-slider-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.kos-slide {
+    display: none;
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.kos-slide.active {
+    display: block;
+}
+
+.kos-card {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.kos-image-container {
+    position: relative;
+    flex: 0 0 40%; /* Lebih besar dari gambar pada contoh sebelumnya */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.kos-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fav-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255);
+    border: none;
+    padding: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: brown;
+}
+
+.kos-info-container {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none !important;
+}
+
+.kos-info-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #0071c2;
+    text-decoration: none !important;
+}
+
+.kos-info-container p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.rating-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.rating-score {
+    font-size: 1em;
+    color: #fff;
+    background-color: #48494a;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-right: auto;
+}
+
+.price-btn {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-btn:hover {
+    background-color: #005b99;
+}
+
+/* Tombol navigasi slider */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255);
+    color: rgb(107, 107, 107);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 18px;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+button.prev {
+    left: 20px;
+}
+
+button.next {
+    right: 20px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .kos-slider-container {
+        width: 100%;
+    }
+
+    .kos-card {
+        flex-direction: column;
+    }
+
+    .kos-image-container {
+        flex: none;
+        height: 200px;
+    }
+
+    button.prev, button.next {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+.kos-lokasi {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.kos-lokasi h2 {
+    text-align: left;
+    margin-left: 95px;
+    margin-bottom: 10px;
+    font-size: 1.8 em;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+}
+
+.lokasi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lokasi-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left; /* Mengatur teks agar rata kiri */
+}
+
+.lokasi-card img {
+    width: 100%; /* Gambar memenuhi lebar boks */
+    height: auto; /* Tinggi otomatis untuk mempertahankan rasio aspek */
+    border-radius: 10px; /* Menghaluskan sudut gambar */
+    margin-bottom: 10px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.lokasi-card h3 {
+    font-size: 1.3em; /* Ukuran font judul lebih kecil */
+    color: #0071c2;
+    margin-bottom: 10px;
+    text-decoration: none !important; /* Menghilangkan garis bawah */
+}
+
+.lokasi-card p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 0.9em; /* Ukuran font deskripsi lebih kecil */
+}
+
+.view-kos-btn {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Ukuran font tombol lebih kecil */
+    transition: background-color 0.3s;
+    text-decoration: none !important; /* Menghilangkan garis bawah pada tombol */
+}
+
+.view-kos-btn:hover {
+    background-color: #005b99;
+}
+
+.lokasi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

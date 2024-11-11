@@ -1,0 +1,238 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% - 80px);
+    top: 0;
+    z-index: 2;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+  }
+  
+  .initial-header {
+    background-color: transparent;
+  }
+  
+  .new-header {
+    display: none; /* Sembunyikan header baru di awal */
+    padding: 10px 40px; /* Padding lebih kecil untuk header baru */
+    background-color: #2F2F2F; /* Warna latar belakang saat scroll */
+    position: fixed; /* Tetap di atas saat scroll */
+    width: calc(100% - 80px);
+    top: 0;
+    z-index: 2; /* Pastikan di atas elemen lain */
+  }
+  
+  .show {
+    display: flex; /* Tampilkan header baru saat scroll */
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+  
+  .header a:hover {
+    color: #009C96;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-text {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s ease;
+  }
+  
+  .logo-text:hover {
+  color: #009C96; /* Warna saat hover */
+  }
+  
+  .hero {
+    position: relative;
+    text-align: left;
+    color: white;
+  }
+  
+  .geseran {
+    position: relative; /* Ubah dari absolute */
+    width: 100%;
+    height: 80px; /* Ubah ukuran tinggi */
+    border-radius: 0px 0px 0px 0px;
+    overflow: hidden;
+  }
+  
+  .geser {
+    position: absolute;
+    top: 0;
+    left: 0; /* Setel ke kiri untuk semua gambar */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius:0 0px 10px 10px; /* Menambahkan border-radius */
+    opacity: 1 !important; /* Mulai dengan transparansi */
+    transition: opacity 0.5s ease; /* Tambahkan efek transisi opacity */
+  }
+  
+  .geser.active {
+    opacity: 1; /* Tampilkan gambar yang aktif */
+  }
+  
+  .hero .text {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    transform: translate(-10%, -20%); 
+  }
+  
+  .hero .text h1 {
+    font-size: 30px;
+    margin: 1.5;
+    line-height: 1.2;
+    color: white; 
+    transition: color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .hero .text h1:hover {
+    color: #009C96; /* Warna saat hover */
+    transform: translateY(-5px);
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    border-radius: 50px;
+    width: 90%;
+    max-width: 1010px;
+  }
+  
+  .search-bar input, .search-bar select, .search-bar button {
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-bar input[type="text"] {
+    flex: 2; /* Lebar lebih besar untuk bagian lokasi */
+    border-right: 1px solid #ccc;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  /* Memperkecil input untuk Tanggal Masuk dan Tanggal Keluar */
+  .search-bar input#checkin-date, 
+  .search-bar input#checkout-date {
+      flex: 0.7; /* Perkecil input tanggal */
+      border-right: 1px solid #ccc;
+  }
+  
+  .search-bar select {
+    flex: 0.7;
+    border-right: 1px solid #ccc;
+  }
+  
+  .search-bar button {
+    background-color: #009C96;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 0.8;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .search-bar i {
+    margin-right: 10px;
+    color: #333;
+  }
+  
+
+h1 { 
+    font-size: 30px; 
+    text-align: center; 
+    margin: 15px 10px; 
+    color: #000; /* Warna teks hitam */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.card {
+    display: inline-block;
+    width: 280px;
+    height: 150px;
+    margin: 35px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 9px;
+}
+
+.card .info {
+    padding: 10px 0;
+}
+
+.card .info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2px;
+    color: #333;
+}
+
+.separator {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 50px 0; 
+}

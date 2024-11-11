@@ -25,7 +25,7 @@
           <a href="/tentang">Tentang KosMaPus</a>
         </div>
         <div class="right">
-          <a href="/login">
+          <a href="auth/login">
             <i class="fas fa-user"> </i> Masuk / Daftar
           </a>
         </div>

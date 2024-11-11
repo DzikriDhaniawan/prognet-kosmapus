@@ -9,12 +9,12 @@
 </head>
 <body>
   <div class="container">
-    <a href="{{ url('login') }}" class="back-arrow">
+    <a href="{{ url('auth/login') }}" class="back-arrow">
       <i class="fas fa-arrow-left"></i>
     </a>
     <h2>Create Account</h2>
 
-    <form action="{{ url('/daftar') }}" method="POST">
+    <form action="{{ url('/auth/daftar') }}" method="POST">
       @csrf
       <label for="username">Username</label>
       <input id="username" name="username" type="text" required />
@@ -49,7 +49,7 @@
 
       <div class="login-link">
         <p>Already have an account?</p>
-        <a href="{{ url('login') }}" id="openLoginModal">Log In</a>
+        <a href="{{ url('auth/login') }}" id="openLoginModal">Log In</a>
       </div>
 
       <!-- Tampilkan pesan kesalahan jika ada -->

@@ -17,7 +17,7 @@
     </a>
     <h2>Log in</h2>
     <div class="google-btn">
-      <img alt="Google Logo" height="20" src="img/google.png" width="20"/>
+      <img alt="Google Logo" height="20" src="{{ asset('img/google.png') }}" width="20"/>
       Continue with Google
     </div>
     <div class="divider">
@@ -39,12 +39,13 @@
     <input id="remember-me" name="remember-me" type="checkbox"/>
     <label for="remember-me">Remember me</label>
   </div>
-  <button type="submit" class="signup-btn"></a>Log in</button><a href ="/user">
+  <button type="submit" class="signup-btn">Log in</button>
 </form>
-    <div class="divider"></div>
-    <div class="login-link">
-      <p>Don't have an account?</p>
-      <a href="daftar">Sign up</a>
+<div class="divider"></div>
+<div class="login-link">
+  <p>Don't have an account?</p>
+  <a href="/auth/daftar">Sign up</a>
+</div>
     </div>
   </div>
   <script>

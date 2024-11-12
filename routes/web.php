@@ -15,10 +15,10 @@ use App\Http\Controllers\kosmapusController;
 */
 
 Route::resource('/', KosmapusController::class);
-Route::get('/login', [KosmapusController::class, 'LoginForm'])->name('login.form'); // Untuk menampilkan form login
-Route::post('/login', [KosmapusController::class, 'Login'])->name('login'); // Untuk memproses login
-Route::get('daftar', [KosmapusController::class, 'daftar'])->name('daftar.form'); // menampilkan form daftar
-Route::post('/daftar', [KosmapusController::class, 'daftarAkun'])->name('daftar.store'); // Proses daftar
+Route::get('auth/login', [KosmapusController::class, 'LoginForm'])->name('login.form'); // Untuk menampilkan form login
+Route::post('auth/login', [KosmapusController::class, 'Login'])->name('login'); // Untuk memproses login
+Route::get('auth/daftar', [KosmapusController::class, 'daftar'])->name('daftar.form'); // menampilkan form daftar
+Route::post('auth/daftar', [KosmapusController::class, 'daftarAkun'])->name('daftar.store'); // Proses daftar
 Route::get('/user', [KosmapusController::class, 'user'])->name('user');
 Route::get('/detail', [KosmapusController::class, 'detail'])->name('user.detail');
 // Route untuk menampilkan form informasi
@@ -26,7 +26,7 @@ Route::get('/informasi', [KosmapusController::class, 'create'])->name('informasi
 // Route untuk menyimpan informasi
 Route::post('/informasi', [KosmapusController::class, 'store'])->name('informasi.store');
 Route::get('/koslokasi', [KosmapusController::class, 'koslokasi'])->name('koslokasi');
-Route::get('/lupa', [KosmapusController::class, 'lupa'])->name('lupa');
+Route::get('auth/lupa', [KosmapusController::class, 'lupa'])->name('lupa');
 Route::get('/pembayaran', [KosmapusController::class, 'pembayaran'])->name('pembayaran');
 Route::get('/semuakos', [KosmapusController::class, 'semuakos'])->name('kos.semuakos');
 Route::get('/tentang', [KosmapusController::class, 'tentang'])->name('tentang');

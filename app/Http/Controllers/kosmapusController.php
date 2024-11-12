@@ -59,7 +59,7 @@ class kosmapusController extends Controller
 
 public function LoginForm()
 {
-    return view('login');
+    return view('auth/login');
 }
 
 
@@ -81,12 +81,12 @@ public function daftarAkun(Request $request)
     $user->save();
 
     // Redirect setelah berhasil daftar
-    return redirect('/login')->with('success', 'Akun berhasil dibuat. Silakan login!');
+    return redirect('auth/login')->with('success', 'Akun berhasil dibuat. Silakan login!');
 }
 
 public function daftar()
 {
-    return view('daftar');
+    return view('auth/daftar');
 }
 
 public function user()
@@ -107,7 +107,7 @@ public function koslokasi()
 
 public function lupa()
 {
-    return view('Lupa');
+    return view('auth/Lupa');
 }
 
 public function Pembayaran()

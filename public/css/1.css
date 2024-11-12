@@ -106,7 +106,7 @@ body {
   
   .hero .text {
     position: absolute;
-    bottom: 15%;
+    bottom: 25%;
     left: 15%;
     transform: translate(-10%, -20%); 
   }
@@ -470,13 +470,11 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    transition: opacity 0.5s ease; /* Transisi yang lebih halus */
-    visibility: visible; /* Sembunyikan elemen dengan visibility */
+    transition: none; /* Menghapus transisi opacity untuk membuatnya cepat */
   }
-
+  
   .universities.hidden {
-    visibility: hidden; /* Sembunyikan elemen */
-    opacity: 0; /* Membuat elemen transparan */
+    display: none; /* Ganti visibility: hidden dengan display: none untuk menyembunyikan elemen langsung */
   }
   
   .university {

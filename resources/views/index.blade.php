@@ -496,21 +496,25 @@
   function showPage(page) {
     const kota = document.getElementById('kota');
     const universitas = document.getElementById('universitas');
+    const kotaButton = document.getElementById('kotaButton');
+    const universitasButton = document.getElementById('universitasButton');
     
     if (page === 'kota') {
-      universitas.classList.add('hidden');
-      kota.classList.remove('hidden');
-      setTimeout(() => {
-        universitas.style.display = 'none'; // Hapus dari DOM setelah animasi
-      }, 500); // Sesuaikan dengan waktu transisi
-      kota.style.display = 'flex'; // Pastikan kota terlihat
+      universitas.classList.add('hidden');  // Sembunyikan universitas
+      kota.classList.remove('hidden');     // Tampilkan kota
+      universitas.style.display = 'none';
+      kota.style.display = 'flex';
+      // Perbarui tombol aktif
+      kotaButton.classList.add('active');
+      universitasButton.classList.remove('active');
     } else {
-      kota.classList.add('hidden');
-      universitas.classList.remove('hidden');
-      setTimeout(() => {
-        kota.style.display = 'none'; // Hapus dari DOM setelah animasi
-      }, 500); // Sesuaikan dengan waktu transisi
-      universitas.style.display = 'flex'; // Pastikan universitas terlihat
+      kota.classList.add('hidden');        // Sembunyikan kota
+      universitas.classList.remove('hidden');  // Tampilkan universitas
+      kota.style.display = 'none';
+      universitas.style.display = 'flex';
+      // Perbarui tombol aktif
+      universitasButton.classList.add('active');
+      kotaButton.classList.remove('active');
     }
   }
   // Panggil fungsi untuk membuat indikator

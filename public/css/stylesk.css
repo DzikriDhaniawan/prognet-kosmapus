@@ -1,108 +1,55 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+  body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('img/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+  }
 
-.header {
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: transparent;
-    position: absolute;
-    width: calc(100% - 80px);
-    top: 0;
-    z-index: 2;
-    transition: background-color 0.3s ease, padding 0.3s ease;
   }
-  
-  .initial-header {
-    background-color: transparent;
-  }
-  
-  .new-header {
-    display: none; /* Sembunyikan header baru di awal */
-    padding: 10px 40px; /* Padding lebih kecil untuk header baru */
-    background-color: #2F2F2F; /* Warna latar belakang saat scroll */
-    position: fixed; /* Tetap di atas saat scroll */
-    width: calc(100% - 80px);
-    top: 0;
-    z-index: 2; /* Pastikan di atas elemen lain */
-  }
-  
-  .show {
-    display: flex; /* Tampilkan header baru saat scroll */
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 15px;
-    font-weight: 500;
-  }
-  
-  .header a:hover {
-    color: #009C96;
-  }
-  
-  .logo-container {
+
+  .header .logo {
     display: flex;
     align-items: center;
   }
-  
-  .logo {
-    height: 40px;
+
+  .header .logo a {
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    color: white; /* Ganti dengan warna yang diinginkan, misalnya hitam */
+  }
+
+  .header .logo img {
+    height: 30px;
     margin-right: 10px;
+  }
+
+  .header .nav {
     display: flex;
-    align-items: center;
+    gap: 20px;
   }
-  
-  .logo-text {
-    font-size: 1.5em;
+
+  .header .nav a {
     color: white;
-    font-weight: 700;
-    text-decoration: none; /* Menghilangkan garis bawah */
-    transition: color 0.3s ease;
+    text-decoration: none;
   }
-  
-  .logo-text:hover {
-  color: #009C96; /* Warna saat hover */
+
+  .header .auth {
+    display: flex;
+    gap: 10px;
   }
-  
-  .hero {
-    position: relative;
-    text-align: left;
+
+  .header .auth a {
     color: white;
-  }
-  
-  .geseran {
-    position: relative; /* Ubah dari absolute */
-    width: 100%;
-    height: 80px; /* Ubah ukuran tinggi */
-    border-radius: 0px 0px 0px 0px;
-    overflow: hidden;
-  }
-  
-  .geser {
-    position: absolute;
-    top: 0;
-    left: 0; /* Setel ke kiri untuk semua gambar */
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius:0 0px 10px 10px; /* Menambahkan border-radius */
-    opacity: 1 !important; /* Mulai dengan transparansi */
-    transition: opacity 0.5s ease; /* Tambahkan efek transisi opacity */
-  }
-  
-  .geser.active {
-    opacity: 1; /* Tampilkan gambar yang aktif */
+    text-decoration: none;
   }
   
   .hero .text {

@@ -165,7 +165,7 @@
   </div>
 
   <div class="card">
-    <img src="img/6.jpg" class="rekomImg" alt="Kos Image">
+    <img src="img/p2.jpg" class="rekomImg" alt="Kos Image">
     <div class="card-description">
       <h3 class="kos-name">Kos Ceria</h3>
       <p class="kos-address">Jl. Ceria No. 8, Semarang</p>
@@ -274,82 +274,82 @@
       <div class="properties">
         <div class="property">
           <a href="/detail">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
+          <img alt="Placeholder image" src="img/r1.jpg"/>
           </a>
-          <span class="availability">Sisa 1 kamar</span>
+          <span class="availability">Penuh</span>
           <div class="property-content">
-            <h3>Rukita Twin Cube Tawakal Tomang</h3>
-            <p>Tomang, Grogol Petamburan</p>
-            <p class="price">mulai dari Rp2.600.000 /bulan</p>
+            <h3>Kost Pak De Darno</h3>
+            <p>Denpasar, Bali</p>
+            <p class="price">mulai dari Rp1.800.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
         </div>
         <div class="property">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
+          <img alt="Placeholder image" src="img/r2.jpg"/>
           <span class="availability">Sisa 1 kamar</span>
           <div class="property-content">
-            <h3>Rukita Urban Coliving Pademangan</h3>
-            <p>Pademangan Barat, Pademangan</p>
+            <h3>Kost Bu De Darmi</h3>
+            <p>Jimbaran, Bali</p>
             <p class="price">mulai dari Rp2.100.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
         </div>
         <div class="property">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
+          <img alt="Placeholder image" src="img/r3.jpg"/>
           <span class="availability">Sisa 3 kamar</span>
           <div class="property-content">
-            <h3>Masda 3 Teluk Gong Bandengan</h3>
-            <p>Pejagalan, Penjaringan</p>
+            <h3>Penginapan Darma</h3>
+            <p>Canggu, Bali</p>
             <p class="price">mulai dari Rp1.450.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 3 Voucher s/d 350rb</p>
           </div>
         </div>
         <div class="property">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
+          <img alt="Placeholder image" src="img/r5.jpg"/>
           <span class="availability">Sisa 2 kamar</span>
           <div class="property-content">
-            <h3>Rukita Mozza Muwardi Grogol</h3>
-            <p>Grogol, Grogol Petamburan</p>
+            <h3>Rumah Kost Melati</h3>
+            <p>Monang Maning, Denpasar, Bali</p>
             <p class="price">mulai dari Rp2.350.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
         </div>
         <div class="property">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
-          <span class="availability">Sisa 1 kamar</span>
+          <img alt="Placeholder image" src="img/r4.jpg"/>
+          <span class="availability">Penuh</span>
           <div class="property-content">
-            <h3>Rukita Twin Cube Tawakal Tomang</h3>
-            <p>Tomang, Grogol Petamburan</p>
+            <h3>Indomar Kost</h3>
+            <p>Kuta, Bali</p>
             <p class="price">mulai dari Rp2.600.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
         </div>
         <div class="property">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
+          <img alt="Placeholder image" src="img/r6.jpg"/>
           <span class="availability">Sisa 1 kamar</span>
           <div class="property-content">
-            <h3>Rukita Urban Coliving Pademangan</h3>
-            <p>Pademangan Barat, Pademangan</p>
+            <h3>Kost Bu Tutink</h3>
+            <p>Nusa Dua, Bali</p>
             <p class="price">mulai dari Rp2.100.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
         </div>
         <div class="property">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
+          <img alt="Placeholder image" src="img/r7.jpg"/>
           <span class="availability">Sisa 3 kamar</span>
           <div class="property-content">
-            <h3>Masda 3 Teluk Gong Bandengan</h3>
-            <p>Pejagalan, Penjaringan</p>
+            <h3>Kost Elite Bos Man</h3>
+            <p>Ubud, Bali</p>
             <p class="price">mulai dari Rp1.450.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 3 Voucher s/d 350rb</p>
           </div>
         </div>
         <div class="property">
-          <img alt="Placeholder image" src="img/kampus01.jpg"/>
-          <span class="availability">Sisa 2 kamar</span>
+          <img alt="Placeholder image" src="img/r8.jpg"/>
+          <span class="availability">NEW</span>
           <div class="property-content">
-            <h3>Rukita Mozza Muwardi Grogol</h3>
-            <p>Grogol, Grogol Petamburan</p>
+            <h3>Kost Udayana</h3>
+            <p>Sudirman, Denpasar, Bali</p>
             <p class="price">mulai dari Rp2.350.000 /bulan</p>
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
@@ -369,7 +369,6 @@
       </div>
       <div class="download-buttons" style="margin-left: 20px; align-self: flex-end;">
         <a href="https://play.google.com/store/apps/details?id=com.oyo.consumer">Download Aplikasi</a>
-        <a href="/login">Masuk / Daftar</a>
       </div>
     </div>
     <div class="right">
@@ -498,21 +497,25 @@
   function showPage(page) {
     const kota = document.getElementById('kota');
     const universitas = document.getElementById('universitas');
+    const kotaButton = document.getElementById('kotaButton');
+    const universitasButton = document.getElementById('universitasButton');
     
     if (page === 'kota') {
-      universitas.classList.add('hidden');
-      kota.classList.remove('hidden');
-      setTimeout(() => {
-        universitas.style.display = 'none';
-      }, 500);
+      universitas.classList.add('hidden');  // Sembunyikan universitas
+      kota.classList.remove('hidden');     // Tampilkan kota
+      universitas.style.display = 'none';
       kota.style.display = 'flex';
+      // Perbarui tombol aktif
+      kotaButton.classList.add('active');
+      universitasButton.classList.remove('active');
     } else {
-      kota.classList.add('hidden');
-      universitas.classList.remove('hidden');
-      setTimeout(() => {
-        kota.style.display = 'none';
-      }, 500);
+      kota.classList.add('hidden');        // Sembunyikan kota
+      universitas.classList.remove('hidden');  // Tampilkan universitas
+      kota.style.display = 'none';
       universitas.style.display = 'flex';
+      // Perbarui tombol aktif
+      universitasButton.classList.add('active');
+      kotaButton.classList.remove('active');
     }
   }
 

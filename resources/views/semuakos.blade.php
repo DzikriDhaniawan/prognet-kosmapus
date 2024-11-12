@@ -10,45 +10,23 @@
 </head>
 <body>
     
-<div class="header initial-header">
-        <div class="logo-container">
-            <img src="img/logo.png" alt="Logo" class="logo">
-            <a href="/" class="logo-text">KosMaPus</a>
-        </div>
-        <div class="nav">
-          <a href="#search-bar">Cari Kos</a>
-          <a href="#footer">Hubungi Kami</a>
-          <a href="#footer">FAQ</a>
-          <a href="/tentang">Tentang KosMaPus</a>
-        </div>
-        <div class="right">
-          <a href="/informasi">
-            <i class="fas fa-user"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="header new-header">
-        <div class="logo-container">
+    <div class="header">
+        <div class="logo">
           <img src="img/logo.png" alt="Logo" class="logo">
-          <a href="/" class="logo-text">KosMaPus</a>
+          <a href="/user" style="text-decoration: none;">KosMaPus</a>
         </div>
         <div class="nav">
-          <a href="#search-bar">Cari Kos</a>
-          <a href="#footer">Hubungi Kami</a>
-          <a href="#footer">FAQ</a>
-          <a href="/tentang">Tentang KosMaPus</a>
+          <a href="1.html#search-bar">Cari Kos</a>
+          <a href="1.html#footer">Hubungi Kami</a>
+          <a href="1.html#footer">FAQ</a>
+          <a href="tentang.html">Tentang KosMaPus</a>
         </div>
-        <div class="right">
-          <a href="/informasi">
+        <div class="auth">
+          <a href="login">
             <i class="fas fa-user"></i>
           </a>
         </div>
       </div>
-
-      <div class="geseran">
-        <div class="geser active" style="background-image: url('img/kos001.png');"></div>
-    </div>
 
 <h1>Temukan Kos di Sekitar Kampus</h1>
 
@@ -102,7 +80,7 @@
 <h1>Temukan Kos Berdasarkan Lokasi</h1>
 <div class="container">
     <div class="card">
-       <a href="" style= "text-decoration: none"> <img src="img/kampus1.jpeg" alt="">
+       <a href="" style= "text-decoration: none"> <img src="img/dps.jpg" alt="">
         <div class="info">
             <h3>Denpasar</h3>
         </div>
@@ -110,7 +88,7 @@
     </a>
 
     <div class="card">
-       <a href="" style= "text-decoration: none"></a> <img src="img/kampus01.jpg" alt="">
+       <a href="" style= "text-decoration: none"></a> <img src="img/kuta.jpg" alt="">
         <div class="info">
             <h3>Kuta</h3>
         </div>
@@ -118,7 +96,7 @@
 
 
     <div class="card">
-       <a href="" style= "text-decoration: none"></a> <img src="img/kampus2.jpeg" alt="">
+       <a href="" style= "text-decoration: none"></a> <img src="img/ubud.jpg" alt="">
         <div class="info">
             <h3>Ubud</h3>
         </div>
@@ -127,7 +105,7 @@
 
     <div class="card">
         <a href="/kosseminyak "style="text-decoration: none;">
-        <img src="img/kampus02.jpg" alt="">
+        <img src="img/seminyak.jpg" alt="">
         <div class="info">
             <h3>Seminyak</h3>
             </a>
@@ -136,50 +114,50 @@
 
     <div class="card">
         <a href="/koslokasi" style="text-decoration: none;">
-        <img src="img/kampus4.jpeg" alt="">
+        <img src="img/jimbo.jpg" alt="">
         <div class="info">
             <h3>Jimbaran</h3>
             </a>
         </div>
     </div>
     <div class="card">
-        <img src="img/kampus4.jpeg" alt="">
+        <img src="img/nusa.jpg" alt="">
         <div class="info">
             <h3>Nusa Dua</h3>
         </div>
     </div>
     <div class="card">
-        <img src="img/kampus02.jpg" alt="">
+        <img src="img/sanur.jpg" alt="">
         <div class="info">
             <h3>Sanur</h3>
         </div>
     </div>
     <div class="card">
-        <img src="img/kampus4.jpeg" alt="">
+        <img src="img/canggu.jpg" alt="">
         <div class="info">
-            <h3>Tuban</h3>
+            <h3>Canggu</h3>
         </div>
     </div>
     <div class="card">
-        <img src="img/kampus4.jpeg" alt="">
+        <img src="img/singaraja.jpg" alt="">
         <div class="info">
-            <h3>Kerobokan</h3>
+            <h3>Singaraja</h3>
         </div>
     </div>
     <div class="card">
-        <img src="img/kampus02.jpg" alt="">
+        <img src="img/badung.jpg" alt="">
         <div class="info">
             <h3>Badung</h3>
         </div>
     </div>
     <div class="card">
-        <img src="img/kampus4.jpeg" alt="">
+        <img src="img/gianyar.jpg" alt="">
         <div class="info">
             <h3>Gianyar</h3>
         </div>
     </div>
     <div class="card">
-        <img src="img/kampus4.jpeg" alt="">
+        <img src="img/bangli.jpg" alt="">
         <div class="info">
             <h3>Bangli</h3>
         </div>

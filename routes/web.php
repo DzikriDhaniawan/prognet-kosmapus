@@ -50,7 +50,9 @@ Route::get('/sanur', [KosmapusController::class, 'sanur'])->name('sanur');
 Route::get('/nusadua', [KosmapusController::class, 'nusadua'])->name('nusadua');
 Route::get('/kuta', [KosmapusController::class, 'kuta'])->name('kuta');
 Route::get('/ubud', [KosmapusController::class, 'ubud'])->name('ubud');
+Route::get('/gallery', [KosmapusController::class, 'gallery'])->name('gallery.create');
 
 Route::get('/informasi', [KosmapusController::class, 'create'])->name('informasi.create');
 Route::post('/informasi/store', [KosmapusController::class, 'store'])->name('informasi.store');
 Route::get('/informasi/{id}', [KosmapusController::class, 'show'])->name('informasi.show');
+

@@ -199,6 +199,11 @@ public function ubud()
     return view('ubud');
 }
 
+public function gallery()
+{
+    return view('gallery');
+}
+
 /**
      * Show the form for creating a new resource.
      */

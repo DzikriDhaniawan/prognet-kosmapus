@@ -20,28 +20,28 @@
         </div>
         <div class="auth">
           <a href="login">
-            <i class="fas fa-user"></i> Masuk / Daftar
+            <i class="fas fa-user"></i>
           </a>
         </div>
       </div>
       <div class="container">
         <div class="main-image">
           <div class="placeholder">
-            <img src="img/t2.jpeg" alt="Main Image" />
+            <img src="img/d1.jpg" alt="Main Image" />
           </div>
           <div class="thumbnail-images">
             <div class="placeholder">
-                <img src="img/t1.jpeg" alt="Thumbnail 1" />
+                <img src="img/d2.jpg" alt="Thumbnail 1" />
             </div>
             <div class="placeholder">
-                <img src="img/t3.jpeg" alt="Thumbnail 2" />
+                <img src="img/d3.jpg" alt="Thumbnail 2" />
             </div>
             <div class="placeholder">
-                <img src="img/t4.jpeg" alt="Thumbnail 3" />
+                <img src="img/d4.jpg" alt="Thumbnail 3" />
             </div>
             <div class="placeholder">
-                <img src="img/t5.jpeg" alt="Thumbnail Gallery" style="width: 100%; height: 100%; object-fit: cover;" />
-                <div class="view-gallery" onclick="showGallery()">Lihat semua</div>
+                <img src="img/d5.jpg" alt="Thumbnail Gallery" style="width: 100%; height: 100%; object-fit: cover;" />
+                <a href="/gallery" class="view-gallery">Lihat semua</a>
             </div>
           </div>
         </div>
@@ -49,10 +49,10 @@
 
     <div class="details">
       <div>
-        <div class="title">Dhaniawan Premium Kos</div>
+        <div class="title">Kost Pak De Darno</div>
         <div class="location">
           <i class="fas fa-map-marker-alt"></i>
-          JL. Tunjungan No. 43, Surabaya
+          JL. Merpati No. 12, Denpasar, Bali
         </div>
       </div>
       <div>

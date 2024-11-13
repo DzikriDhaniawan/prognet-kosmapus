@@ -31,6 +31,7 @@ img, svg {
 /* Main FAQ Card */
 #card {
     margin: auto;
+    margin-top: 20px;
     background-color: white;
     padding: 1.5rem;
     max-width: 85%;
@@ -184,4 +185,83 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+#faq-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Judul bagian FAQ */
+#faq-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+#faq-header img {
+  width: 30px;
+}
+
+#faq-list .card-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#faq-list .card-item:last-child {
+  border-bottom: none;
+}
+
+/* Styling untuk bagian Form Tambah Pertanyaan */
+#form-card {
+  background-color: #f3f3f3;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+/* Judul bagian Form */
+#form-section h2 {
+  font-size: 1.5rem;
+  color: #4a148c;
+  margin-bottom: 1rem;
+}
+
+/* Styling input dan button pada Form */
+#add-question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#add-question-form input {
+  padding: 12px;
+  border: 1px solid #d1c4e9;
+  border-radius: 5px;
+  outline: none;
+}
+
+#add-question-form button {
+  background-color: #4a148c;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-question-form button:hover {
+  background-color: #7b1fa2;
+}
+
+/* Pesan sukses/gagal */
+#response-message {
+  font-size: 0.9rem;
+  margin-top: 1rem;
 }

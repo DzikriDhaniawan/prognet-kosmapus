@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\kosmapusController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\UserInfoController;
+use App\Http\Controllers\AccountController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +20,7 @@ use App\Http\Controllers\kosmapusController;
 
 Route::resource('/', KosmapusController::class);
 Route::get('auth/login', [KosmapusController::class, 'LoginForm'])->name('login.form'); // Untuk menampilkan form login
-Route::post('auth/login', [KosmapusController::class, 'Login'])->name('login'); // Untuk memproses login
+Route::post('auth/login', [KosmapusController::class, 'Login'])->name('login.pp'); // Untuk memproses login
 Route::get('auth/daftar', [KosmapusController::class, 'daftar'])->name('daftar.form'); // menampilkan form daftar
 Route::post('auth/daftar', [KosmapusController::class, 'daftarAkun'])->name('daftar.store'); // Proses daftar
 Route::get('/user', [KosmapusController::class, 'user'])->name('user');
@@ -58,3 +62,15 @@ Route::post('/informasi/store', [KosmapusController::class, 'store'])->name('inf
 Route::get('/informasi/{id}', [KosmapusController::class, 'show'])->name('informasi.show');
 
 Route::get('/faq', [KosmapusController::class, 'faq'])->name('faq');
+
+Route::get('/faq', [FaqController::class, 'index']);
+Route::post('/faq/store', [FaqController::class, 'store']);
+
+
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/informasi', [UserInfoController::class, 'create'])->name('informasi.create');
+    Route::post('/informasi', [UserInfoController::class, 'store'])->name('informasi.store');
+    Route::get('/account', [UserInfoController::class, 'show'])->name('account.show');
+});

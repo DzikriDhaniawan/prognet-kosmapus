@@ -271,7 +271,7 @@
         <p>Undiksha</p> 
       </div>
     </div>
-    
+
     <div class="view-all">
       <a href="/semuakos" style="text-decoration: none;">
       <button>Lihat Semua</button>
@@ -279,6 +279,8 @@
   </div>
 
   </section>
+
+  
     <div class="latest-properties">
       <h2>Kos Terbaru</h2>
       <div class="properties">
@@ -294,6 +296,7 @@
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
         </div>
+
         <div class="property">
           <img alt="Placeholder image" src="img/r2.jpg"/>
           <span class="availability">Sisa 1 kamar</span>

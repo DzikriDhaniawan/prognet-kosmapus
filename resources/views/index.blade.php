@@ -283,6 +283,7 @@
             <p class="voucher"><i class="fas fa-ticket-alt"></i> 5 Voucher s/d 350rb</p>
           </div>
         </div>
+        
         <div class="property">
           <img alt="Placeholder image" src="img/kampus01.jpg"/>
           <span class="availability">Sisa 1 kamar</span>

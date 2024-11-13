@@ -18,7 +18,7 @@
       <div id="card-content">
         <div class="card-item">
           <div class="card-item-btn button">
-            What is Frontend Mentor, and how will it help me?
+            Bagaimana cara mencari kos??
             <div class="icons">
               <img class="plus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Plus Icon">
               <img class="minus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828899.png" alt="Minus Icon">
@@ -26,15 +26,14 @@
           </div>
           <div class="card-item-description">
             <p>
-              Frontend Mentor offers realistic coding challenges to help developers improve their 
-              frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-              all levels and ideal for portfolio building.
+            Cukup masukkan lokasi atau 
+            kampus terdekat, lalu pilih kos yang sesuai dengan kebutuhanmu. 
             </p>
           </div>
         </div>
         <div class="card-item">
           <div class="card-item-btn button">
-            Is Frontend Mentor free?
+          Apakah saya bisa langsung booking kos di website? 
             <div class="icons">
               <img class="plus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Plus Icon">
               <img class="minus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828899.png" alt="Minus Icon">
@@ -42,14 +41,15 @@
           </div>
           <div class="card-item-description">
             <p>
-              Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-              option providing access to a range of projects suitable for all skill levels.
+            Tidak, setelah memilih kos, 
+            kamu bisa langsung menghubungi pemilik melalui Whatsapp. 
             </p>
           </div>
         </div>
         <div class="card-item">
           <div class="card-item-btn button">
-            Can I use Frontend Mentor projects in my portfolio?
+          Apakah pendaftaran akun 
+          diperlukan untuk mencari kos? 
             <div class="icons">
               <img class="plus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Plus Icon">
               <img class="minus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828899.png" alt="Minus Icon">
@@ -57,14 +57,15 @@
           </div>
           <div class="card-item-description">
             <p>
-              Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-              way to showcase your skills to potential employers!
+            Tidak, kamu bisa mencari kos 
+            tanpa mendaftar. Namun,diperlukan untuk tahap pemesanan selanjutnya. 
             </p>
           </div>
         </div>
         <div class="card-item">
           <div class="card-item-btn button">
-            How can I get help if I'm stuck on a Frontend Mentor challenge?
+          Bagaimana cara melihat kos 
+          yang tersedia di dekat kampus?
             <div class="icons">
               <img class="plus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Plus Icon">
               <img class="minus-icon btn-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828899.png" alt="Minus Icon">
@@ -72,8 +73,9 @@
           </div>
           <div class="card-item-description">
             <p>
-              The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-              channel where you can ask questions and seek support from other community members.
+            Gunakan fitur pencarian 
+             dengan memasukkan nama kampus atau area sekitar untuk melihat 
+            kos terdekat. 
             </p>
           </div>
         </div>
@@ -95,7 +97,7 @@
     <div id="card">
       <div id="card-header">
         <img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Star Icon">
-        <h1>FAQ KosMaPus</h1>
+        <h1>Pertanyaan</h1>
       </div>
 
       <div id="card-content">

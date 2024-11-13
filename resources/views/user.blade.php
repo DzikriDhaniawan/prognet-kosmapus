@@ -388,7 +388,7 @@
       <div class="column">
         <h3>Resource</h3>
         <p><a href="/tentang" style="color: white;">Tentang KosMaPus</a></p>
-        <p><a href="#" style="color: white;">FAQ</a></p>
+        <p><a href="/faq" style="color: white;">FAQ</a></p>
         <p><a href="#" style="color: white;">Karir</a></p>
         <p><a href="#" style="color: white;">Stories</a></p>
       </div>

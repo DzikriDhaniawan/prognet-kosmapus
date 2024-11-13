@@ -57,3 +57,4 @@ Route::get('/informasi', [KosmapusController::class, 'create'])->name('informasi
 Route::post('/informasi/store', [KosmapusController::class, 'store'])->name('informasi.store');
 Route::get('/informasi/{id}', [KosmapusController::class, 'show'])->name('informasi.show');
 
+Route::get('/faq', [KosmapusController::class, 'faq'])->name('faq');

@@ -343,5 +343,9 @@ public function gallery()
         //
     }
 
-
+    public function faq()
+    {
+        return view('faq');
+    }
 }
+

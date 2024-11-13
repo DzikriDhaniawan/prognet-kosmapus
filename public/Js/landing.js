@@ -1,4 +1,4 @@
-let currentIndex = 0;
+    let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
 
 function showNextSlide() {

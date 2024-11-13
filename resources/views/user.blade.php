@@ -60,6 +60,7 @@
           dan Nikmati Hidup Kampus yang Lebih Baik!
         </h1>
       </div>
+      
        <div id="search-bar" class="search-bar">
     <form action="{{ route('search') }}" method="POST">
         @csrf
@@ -224,44 +225,53 @@
       <button class="active" id="kotaButton" onclick="showPage('kota')">Daerah</button>
       <button id="universitasButton" onclick="showPage('universitas')">Universitas</button>
     </div>
+
     <div class="universities" id="kota">
       <div class="university">
       <a href="/semuakos" style="text-decoration: none;"></a>
         <img alt="Denpasar" src="img/dps.jpg"/>
         <p>Denpasar</p>
       </div>
+
       <div class="university">
         <img alt="Jimbaran" src="img/jimbo.jpg"/>
         <p>Jimbaran</p>
       </div>
+
       <div class="university">
         <img alt="Kuta" src="img/kuta.jpg"/>
         <p>Kuta</p>
       </div>
+
       <div class="university">
         <img alt="Nusa Dua" src="img/nusa.jpg"/>
         <p>Nusa Dua</p>
       </div>
+
     </div>
     <div class="universities" id="universitas" style="display:none;">
       <div class="university">
         <img alt="UNUD Jimbaran" src="img/kampus04.jpg"/>
         <p>UNUD Jimbaran</p>
       </div>
+
       <div class="university">
         <img alt="ITB Stikom Renon" src="img/kampus2.jpeg"/>
         <p>ITB Stikom Renon</p>
       </div>
+
       <div class="university">
         <img alt="ISI Denpasar" src="img/11.jpg"/>
         <p>ISI Denpasar</p>
       </div>
+
       <div class="university">
         <a href="/semuakos" style="text-decoration: none;">
         <img alt="Undiksha" src="img/12.jpg"/>
         <p>Undiksha</p> 
       </div>
     </div>
+    
     <div class="view-all">
       <a href="/semuakos" style="text-decoration: none;">
       <button>Lihat Semua</button>

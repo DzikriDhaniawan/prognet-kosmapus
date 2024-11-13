@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="card">
-        <a href="/itbstikombali" style= "text-decoration: none"><img src="img/kampus2.jpeg" alt="Algobash">
+        <a href="/itbstikom                 bali" style= "text-decoration: none"><img src="img/kampus2.jpeg" alt="Algobash">
         <div class="info">
             <h3>ITB STIKOM Bali</h3>
             </a>

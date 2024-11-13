@@ -368,7 +368,7 @@
       </div>
       <div class="download-buttons" style="margin-left: 20px; align-self: flex-end;">
         <a href="https://play.google.com/store/apps/details?id=com.oyo.consumer">Download Aplikasi</a>
-        <a href="/login">Masuk / Daftar</a>
+        <a href="auth/login">Masuk / Daftar</a>
       </div>
     </div>
     <div class="right">

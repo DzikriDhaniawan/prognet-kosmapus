@@ -19,7 +19,7 @@
             <a href="/" class="logo-text">KosMaPus</a>
         </div>
         <div class="nav">
-          <a href="#search-bar">Cari PKos</a>
+          <a href="#search-bar">Cari ppppppPKos</a>
           <a href="#footer">Hubungi Kami</a>
           <a href="#footer">FAQ</a>
           <a href="/tentang">Tentang KosMaPus</a>

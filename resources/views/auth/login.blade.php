@@ -44,8 +44,7 @@
 <div class="divider"></div>
 <div class="login-link">
   <p>Don't have an account?</p>
-  <a href="/auth/daftar">Sign up</a>
-</div>
+  <a href="/auth/daftar" class="daftar-button">Sign up</a></div>
     </div>
   </div>
   <script>

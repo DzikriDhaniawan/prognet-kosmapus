@@ -97,6 +97,21 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.daftar-button{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.daftar-button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .container .divider {
@@ -144,8 +159,6 @@ body {
   margin-top: 40px;
   
 }
-
-
 
 .login-link {
   text-align: center; /* Posisi teks di tengah */

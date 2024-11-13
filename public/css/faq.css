@@ -1,0 +1,187 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+/* Responsive images */
+img, svg {
+    max-width: 100%;
+}
+
+.button:hover {
+    color: purple;
+}
+
+/* Main FAQ Card */
+#card {
+    margin: auto;
+    background-color: white;
+    padding: 1.5rem;
+    max-width: 85%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#card-header {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#card-header > img {
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 2rem;
+}
+
+.card-item {
+    padding: 1rem 0;
+}
+
+.card-item:not(:last-child) {
+    border-bottom: solid 1px hsl(275, 100%, 90%);
+}
+
+.card-item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.5rem 0;
+}
+
+.card-item-btn:hover {
+    color: hsl(292, 42%, 30%);
+}
+
+.icons > img {
+    width: 18px;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.card-item-description {
+    font-size: 0.9rem;
+    color: hsl(292, 16%, 49%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease-in-out;
+    padding-left: 1rem;
+}
+
+.card-item-description.show {
+    max-height: 300px;
+}
+
+/* Form Tambah Pertanyaan */
+#question-form {
+    margin-top: 2rem;
+    border-top: 2px solid hsl(275, 100%, 90%);
+    padding-top: 1.5rem;
+}
+
+#question-form h2 {
+    font-size: 1.2rem;
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 1rem;
+}
+
+#faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#faqForm input,
+#faqForm textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(275, 100%, 90%);
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+}
+
+#faqForm textarea {
+    height: 100px;
+}
+
+#faqForm button {
+    padding: 12px;
+    background-color: hsl(292, 42%, 14%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#faqForm button:hover {
+    background-color: hsl(292, 42%, 30%);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    #card {
+        max-width: 95%;
+    }
+
+    body {
+        background-image: url('/path/to/mobile-background-image.svg');
+        min-width: 375px;
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        background-image: url('/path/to/desktop-background-image.svg');
+    }
+}
+
+footer {
+    margin-top: 2rem;
+    color: hsl(292, 16%, 49%);
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer a {
+    color: hsl(292, 42%, 14%);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

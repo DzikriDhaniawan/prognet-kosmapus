@@ -118,7 +118,7 @@
   </div>
   
   <div class="recommendations">
-    <h2>Rekomendasi Aris</h2>
+    <h2>Rekomendasi Kos</h2>
     <div class="carousel">
       <button class="arrow left" onclick="showPreviousCard()">
         <i class="fas fa-chevron-left"></i>

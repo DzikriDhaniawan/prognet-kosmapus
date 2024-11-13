@@ -299,15 +299,15 @@ body {
   .rekomImg {
     position: absolute;
     top: 0;
-    left: 0; /* Setel ke kiri untuk semua gambar */
+    left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     border: 10px 10px 10px 10px;
-    border-radius:0 0 0 0px; /* Menambahkan border-radius */
-    opacity: 1; /* Mulai dengan transparansi */
-    transition: opacity 0.5s ease; /* Tambahkan efek transisi opacity */
+    border-radius:0 0 0 0px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
   }
   
   .recommendations h2 {
@@ -326,7 +326,7 @@ body {
     overflow: hidden;
     width: 100%;
   }
-  
+
   .recommendations .carousel .card {
     flex: 0 0 23%; /* Lebih konsisten untuk flex-basis */
     height: 150px;
@@ -490,6 +490,12 @@ body {
     border-radius: 8px;
     object-fit: cover;
     background-color: #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .university img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
   
   .university p {

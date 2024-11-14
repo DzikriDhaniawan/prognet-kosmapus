@@ -13,7 +13,7 @@ function showNextSlide() {
 }
 
 // Ganti gambar setiap 3 detik
-setInterval(showNextSlide, 3000);
+setInterval(showNextSlide, 2500);
 let currentKosIndex = 0;
 const kosSlides = document.querySelectorAll('.kos-slide');
 

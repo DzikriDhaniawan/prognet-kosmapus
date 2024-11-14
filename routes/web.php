@@ -57,8 +57,6 @@ Route::get('/ubud', [KosmapusController::class, 'ubud'])->name('ubud');
 Route::get('/gallery', [KosmapusController::class, 'gallery'])->name('gallery.create');
 Route::get('/login', [KosmapusController::class, 'login'])->name('login');
 
-Route::get('/informasi', [KosmapusController::class, 'create'])->name('informasi.create');
-Route::post('/informasi/store', [KosmapusController::class, 'store'])->name('informasi.store');
 Route::get('/informasi/{id}', [KosmapusController::class, 'show'])->name('informasi.show');
 
 Route::get('/faq', [KosmapusController::class, 'faq'])->name('faq');
@@ -67,10 +65,3 @@ Route::get('/faq', [FaqController::class, 'index']);
 Route::post('/faq/store', [FaqController::class, 'store']);
 
 
-
-
-Route::middleware(['auth'])->group(function () {
-    Route::get('/informasi', [UserInfoController::class, 'create'])->name('informasi.create');
-    Route::post('/informasi', [UserInfoController::class, 'store'])->name('informasi.store');
-    Route::get('/account', [UserInfoController::class, 'show'])->name('account.show');
-});

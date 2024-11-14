@@ -23,8 +23,8 @@
   }
 
   .header .logo a {
-    text-decoration: none; /* Menghapus garis bawah pada link */
-    color: white; /* Ganti dengan warna yang diinginkan, misalnya hitam */
+    text-decoration: none;
+    color: white;
   }
 
   .header .logo img {

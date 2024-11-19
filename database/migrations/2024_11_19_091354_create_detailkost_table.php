@@ -36,7 +36,41 @@ class CreateDetailkostTable extends Migration
     }
 
     /**
+     * Reverse the migrations.```php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateDetailkostTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('detailkost', function (Blueprint $table) {
+            $table->id('idKost');
+            $table->string('namaKost', 100);
+            $table->decimal('hargaKost', 10, 2);
+            $table->string('alamatKost', 100);
+            $table->string('tagKost', 50);
+            $table->json('fasilitasKost');
+            $table->json('aturanKost');
+            $table->json('fotoKost');
+            $table->string('googleMapsKost', 100)->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
      * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('detailkost');
+    }
+}
+```
      */
     public function down(): void
     {

@@ -18,18 +18,19 @@ class KosmapusController extends Controller
         return view('index');
     }
 
+    public function showRecommendations()
+    {
+        $rekomendasiKost = DetailKost::all();
+        dd($rekomendasiKost); // Menampilkan data untuk verifikasi
+        return view('user', compact('rekomendasiKost'));
+    }
+    
     public function showDetailKost($id)
     {
         $detailKost = DetailKost::findOrFail($id);
         return view('detail', compact('detailKost'));
     }
-
-    public function showRecommendations()
-    {
-        $rekomendasiKost = DetailKost::all();
-        ($rekomendasiKost);
-        return view('user', compact('rekomendasiKost'));
-    }
+    
 
     public function Login(Request $request)
     {

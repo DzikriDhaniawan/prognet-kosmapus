@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KosmapusController;
 use App\Http\Controllers\FaqController;
-use App\Http\Controllers\KostDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +16,7 @@ use App\Http\Controllers\KostDetailController;
 */
 
 // Route untuk halaman utama dan rekomendasi kos
-Route::get('/', [KosmapusController::class, 'index'])->name('index'); // Untuk menampilkan form login
-
+Route::get('/', [KosmapusController::class, 'showRecommendations'])->name('home');
 
 // Route untuk login dan pendaftaran
 Route::get('auth/login', [KosmapusController::class, 'LoginForm'])->name('login.form'); // Untuk menampilkan form login
@@ -28,7 +26,7 @@ Route::post('auth/daftar', [KosmapusController::class, 'daftarAkun'])->name('daf
 Route::get('auth/lupa', [KosmapusController::class, 'lupa'])->name('lupa');
 
 // Route untuk user dan detail kost
-Route::get('/user', [KosmapusController::class, 'user'])->name('user');
+Route::get('/user', [KosmapusController::class, 'showRecommendations'])->name('user');
 Route::get('/kost/{id}', [KosmapusController::class, 'showDetailKost'])->name('kost.show');
 
 // Route untuk halaman lainnya
@@ -43,7 +41,7 @@ Route::get('/tentang', [KosmapusController::class, 'tentang'])->name('tentang');
 Route::post('/search', [KosmapusController::class, 'search'])->name('search');
 Route::get('/gallery', [KosmapusController::class, 'gallery'])->name('gallery.create');
 
-// Route untuk berdasarkan lokasi
+// Route untuk lokasi tertentu
 Route::get('/warmadewa', [KosmapusController::class, 'warmadewa'])->name('warmadewa');
 Route::get('/kosseminyak', [KosmapusController::class, 'kosseminyak'])->name('kosseminyak');
 Route::get('/undiknas', [KosmapusController::class, 'undiknas'])->name('undiknas');

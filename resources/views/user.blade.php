@@ -118,30 +118,33 @@
   </div>
   
 <!-- Section Rekomendasi Kos --> 
-  <div class="recommendations"> 
-    <h2>Rekomendasi Kos</h2> 
-    <div class="carousel"> 
-      <button class="arrow left" onclick="showPreviousCard()">
-        <i class="fas fa-chevron-left"></i> 
-      </button> 
-      <div class="cards"> 
-        @foreach($rekomendasiKost as $kost) 
-        <div class="card"> 
-          <a href="{{ route('kost.show', $kost->idKost) }}"> 
-            <img src="{{ asset($kost->fotoKost1) }}" class="rekomImg" alt="Kos Image"> 
-            <div class="card-description"> <h3 class="kos-name">{{ $kost->namaKost }}</h3> 
+<div class="recommendations"> 
+  <h2>Rekomendasi Kos</h2> 
+  <div class="carousel"> 
+    <button class="arrow left" onclick="showPreviousCard()"> 
+      <i class="fas fa-chevron-left"></i>
+     </button> 
+     <div class="cards"> 
+      @foreach($rekomendasiKost as $kost) 
+      <div class="card"> 
+        <a href="{{ route('kost.show', $kost->idKost) }}"> 
+          <img src="{{ asset($kost->fotoKost1) }}" class="rekomImg" alt="Kos Image"> 
+          <div class="card-description"> 
+            <h3 class="kos-name">{{ $kost->namaKost }}</h3> 
             <p class="kos-address">{{ $kost->alamatKost }}</p> 
-          </div> </a> 
-        </div> @endforeach </div> 
-        <button class="arrow right" onclick="showNextCard()"> 
-          <i class="fas fa-chevron-right"></i> 
-        </button> 
-      </div> 
-      <div class="indicators"> 
-        <span class="dot active"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div> 
+          </div> </a> </div> 
+          @endforeach
+         </div> 
+         
+          <button class="arrow right" onclick="showNextCard()"> 
+            <i class="fas fa-chevron-right"></i> 
+          </button> 
+        </div> 
+        <div class="indicators">
+          <span class="dot active"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>      
+        </div> 
     </div>
 
   <section class="kos-lokasi">
@@ -297,6 +300,7 @@
       </div>
     </div>
   </section>
+
   <div class="footer" id="footer">
     <div class="left">
       <div>

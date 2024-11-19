@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KosmapusController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\KostDetailController;
+
 
 /*
 |--------------------------------------------------------------------------

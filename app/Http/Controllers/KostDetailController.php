@@ -20,7 +20,7 @@ class KostDetailController extends Controller
 
         // Mengembalikan view dengan data detail kost
         return view('detail', compact('detailKost'));
-
-        
     }
+
+    
 }

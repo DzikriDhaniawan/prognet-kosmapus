@@ -13,9 +13,6 @@ use Carbon\Carbon;
 
 class KosmapusController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         return view('index');
@@ -26,10 +23,11 @@ class KosmapusController extends Controller
         $detailKost = DetailKost::findOrFail($id);
         return view('detail', compact('detailKost'));
     }
-    
+
     public function showRecommendations()
     {
         $rekomendasiKost = DetailKost::all();
+        ($rekomendasiKost);
         return view('user', compact('rekomendasiKost'));
     }
 

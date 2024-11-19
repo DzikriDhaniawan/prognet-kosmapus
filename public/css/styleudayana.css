@@ -68,7 +68,7 @@ transition: color 0.5s ease, transform 0.5s ease;
 }
 
 .hero .text h1:hover {
-color: #009C96; /* Warna saat hover */
+color: #009C96;
 transform: translateY(-5px);
 }
 

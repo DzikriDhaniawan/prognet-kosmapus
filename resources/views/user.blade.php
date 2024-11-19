@@ -117,105 +117,32 @@
     </div>
   </div>
   
-  <div class="recommendations">
-    <h2>Rekomendasi Kos</h2>
-    <div class="carousel">
+<!-- Section Rekomendasi Kos --> 
+  <div class="recommendations"> 
+    <h2>Rekomendasi Kos</h2> 
+    <div class="carousel"> 
       <button class="arrow left" onclick="showPreviousCard()">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      
-<div class="cards">
-  <div class="card">
-    <img src="img/kos1.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Citra Indah</h3>
-      <p class="kos-address">Jl. Citra No. 10, Jakarta</p>
+        <i class="fas fa-chevron-left"></i> 
+      </button> 
+      <div class="cards"> 
+        @foreach($rekomendasiKost as $kost) 
+        <div class="card"> 
+          <a href="{{ route('kost.show', $kost->idKost) }}"> 
+            <img src="{{ asset($kost->fotoKost1) }}" class="rekomImg" alt="Kos Image"> 
+            <div class="card-description"> <h3 class="kos-name">{{ $kost->namaKost }}</h3> 
+            <p class="kos-address">{{ $kost->alamatKost }}</p> 
+          </div> </a> 
+        </div> @endforeach </div> 
+        <button class="arrow right" onclick="showNextCard()"> 
+          <i class="fas fa-chevron-right"></i> 
+        </button> 
+      </div> 
+      <div class="indicators"> 
+        <span class="dot active"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div> 
     </div>
-  </div>     
-
-  <div class="card">
-    <img src="img/2.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Bahagia</h3>
-      <p class="kos-address">Jl. Bahagia No. 5, Bandung</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/3.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Suka Rame</h3>
-      <p class="kos-address">Jl. Rame No. 7, Yogyakarta</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/4.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Sejahtera</h3>
-      <p class="kos-address">Jl. Sejahtera No. 20, Surabaya</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/5.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Harmoni</h3>
-      <p class="kos-address">Jl. Harmoni No. 15, Medan</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/p2.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Ceria</h3>
-      <p class="kos-address">Jl. Ceria No. 8, Semarang</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/9.png" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Elok</h3>
-      <p class="kos-address">Jl. Elok No. 12, Bali</p>
-    </div>
-  </div>
-  
-  <div class="card">
-    <img src="img/11.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Damai</h3>
-      <p class="kos-address">Jl. Damai No. 3, Palembang</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/12.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Mewah</h3>
-      <p class="kos-address">Jl. Mewah No. 1, Makassar</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/21.jpg" class="rekomImg" alt="Kos Image">
-    <div class="card-description">
-      <h3 class="kos-name">Kos Nyaman</h3>
-      <p class="kos-address">Jl. Nyaman No. 6, Lombok</p>
-    </div>
-  </div>
-</div>
-
-      <button class="arrow right" onclick="showNextCard()">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-    </div>
-    <div class="indicators">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
 
   <section class="kos-lokasi">
     <div class="lokasi-container">
@@ -285,7 +212,7 @@
       <h2>Kos Terbaru</h2>
       <div class="properties">
         <div class="property">
-          <a href="/detail">
+          <a href="/detail?idKost=1">
           <img alt="Placeholder image" src="img/r1.jpg"/>
           </a>
           <span class="availability">Penuh</span>
@@ -425,8 +352,8 @@
   </div>
 </div>
 <script>
-  // JavaScript functions to open and close the filter pop-up
-  function openFilter() {
+
+function openFilter() {
         document.getElementById("filterOverlay").style.display = "flex";
     }
 
@@ -434,16 +361,13 @@
         document.getElementById("filterOverlay").style.display = "none";
     }
 
-    // Function to apply the selected filter
     function applyFilter() {
-        // Close the pop-up after applying the filter
         closeFilter();
-        // You can add additional logic to handle filter values here if needed
     }
 </script>
 <script>
-    // Initialize Flatpickr for both check-in and check-out date inputs
-    flatpickr("#checkin-date", {
+
+flatpickr("#checkin-date", {
         dateFormat: "d M Y",  
         onChange: function(selectedDates, dateStr, instance) {
             console.log("Tanggal Masuk: " + dateStr);
@@ -451,74 +375,66 @@
     });
 
     flatpickr("#checkout-date", {
-        dateFormat: "d M Y",  // Format tanggal yang diinginkan (misal: 2024-10-07)
+        dateFormat: "d M Y",
         onChange: function(selectedDates, dateStr, instance) {
             console.log("Tanggal Keluar: " + dateStr);
         }
     });
 
-  let currentIndex = 0; // Indeks gambar saat ini
-  const cards = document.querySelectorAll('.carousel .card'); // Ambil semua kartu
-  const totalCards = cards.length; // Total jumlah kartu
+  let currentIndex = 0;
+  const cards = document.querySelectorAll('.carousel .card');
+  const totalCards = cards.length;
   const maxVisibleCards = 7; // Maksimal kartu yang ditampilkan
 
-  // Fungsi untuk menampilkan slide yang sesuai
   function showSlide(index) {
-      // Hapus kelas 'active' dari semua kartu
       cards.forEach((card) => {
           card.classList.remove('active');
       });
-      // Tambahkan kelas 'active' pada kartu yang sesuai
       cards[index].classList.add('active');
   }
 
-  // Fungsi untuk menunjukkan slide berikutnya
   function showNextCard() {
       if (currentIndex < maxVisibleCards - 1) {
-          currentIndex++; // Pindah ke slide berikutnya
+          currentIndex++;
       } else {
-          currentIndex = 0; // Kembali ke slide pertama
+          currentIndex = 0; 
       }
       updateCarousel();
   }
 
-  // Fungsi untuk menunjukkan slide sebelumnya
   function showPreviousCard() {
-      currentIndex = (currentIndex - 1 + totalCards) % totalCards; // Pindah ke slide sebelumnya
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
       updateCarousel();
   }
 
-  // Fungsi untuk memperbarui carousel
   function updateCarousel() {
-      const offset = -currentIndex * (cards[0].offsetWidth + 20); // Menghitung offset
+      const offset = -currentIndex * (cards[0].offsetWidth + 20);
       cards.forEach(card => {
-          card.style.transform = `translateX(${offset}px)`; // Memindahkan kartu
+          card.style.transform = `translateX(${offset}px)`;
       });
-      updateIndicators(); // Memperbarui indikator
+      updateIndicators();
   }
 
-  // Fungsi untuk memperbarui indikator (titik)
   function updateIndicators() {
       const dots = document.querySelectorAll('.indicators .dot');
       dots.forEach((dot, index) => {
-          dot.classList.toggle('active', index === currentIndex); // Mengatur kelas aktif
+          dot.classList.toggle('active', index === currentIndex);
       });
   }
 
-  // Fungsi untuk membuat indikator berdasarkan jumlah total kartu
   function createIndicators() {
       const indicatorsContainer = document.querySelector('.indicators');
-      indicatorsContainer.innerHTML = ''; // Kosongkan titik yang ada
+      indicatorsContainer.innerHTML = '';
 
-      const visibleIndicators = Math.min(totalCards, maxVisibleCards); // Menghitung indikator yang ditampilkan
+      const visibleIndicators = Math.min(totalCards, maxVisibleCards);
 
       for (let i = 0; i < visibleIndicators; i++) {
           const dot = document.createElement('span');
           dot.classList.add('dot');
           if (i === currentIndex) {
-              dot.classList.add('active'); // Tambahkan kelas aktif pada titik yang sesuai
+              dot.classList.add('active');
           }
-          indicatorsContainer.appendChild(dot); // Tambahkan titik ke kontainer
+          indicatorsContainer.appendChild(dot);
       }
   }
 
@@ -529,19 +445,19 @@
     const universitasButton = document.getElementById('universitasButton');
     
     if (page === 'kota') {
-      universitas.classList.add('hidden');  // Sembunyikan universitas
-      kota.classList.remove('hidden');     // Tampilkan kota
+      universitas.classList.add('hidden');    
+      kota.classList.remove('hidden');       
       universitas.style.display = 'none';
       kota.style.display = 'flex';
-      // Perbarui tombol aktif
+
       kotaButton.classList.add('active');
       universitasButton.classList.remove('active');
     } else {
-      kota.classList.add('hidden');        // Sembunyikan kota
-      universitas.classList.remove('hidden');  // Tampilkan universitas
+      kota.classList.add('hidden');      
+      universitas.classList.remove('hidden');
       kota.style.display = 'none';
       universitas.style.display = 'flex';
-      // Perbarui tombol aktif
+
       universitasButton.classList.add('active');
       kotaButton.classList.remove('active');
     }

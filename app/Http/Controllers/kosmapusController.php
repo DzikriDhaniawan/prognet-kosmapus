@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use App\Models\PersonalInformation;
 use App\Models\Kost;
+use App\Models\DetailKost;
 use Carbon\Carbon;
 
 class kosmapusController extends Controller
@@ -20,6 +21,21 @@ class kosmapusController extends Controller
         //
         return view('index');
     }
+
+    public function showDetailKost($id)
+    {
+        $detailKost = DetailKost::findOrFail($id);
+
+        return view('detail', compact('detailKost'));
+    }
+
+    public function showRecommendation()
+    {
+        $recommendation = DetailKost::all();
+
+        return view('user', compact('rekomendasiKost'));
+    }
+
 
     public function Login(Request $request)
     {
@@ -84,6 +100,8 @@ class kosmapusController extends Controller
         // Redirect setelah berhasil daftar
         return redirect('auth/login')->with('success', 'Akun berhasil dibuat. Silakan login!');
     }
+
+    
 
     public function daftar()
     {
